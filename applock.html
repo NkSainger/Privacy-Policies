@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="assets/app_lock_icon.png" />
+<title>AppLock — Privacy Policy, Terms of Use &amp; Data Safety</title>
+<style>
+  :root {
+    --primary: #6366F1;
+    --primary-light: #818CF8;
+    --primary-dark: #4F46E5;
+    --accent: #06B6D4;
+    --bg: #0A0B14;
+    --surface: #131525;
+    --surface-elevated: #1A1D33;
+    --border: rgba(255, 255, 255, 0.10);
+    --border-highlight: rgba(99, 102, 241, 0.35);
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --success: #10B981;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #0F1026 0%, #1A1C38 45%, #2D3169 85%, #4F46E5 100%);
+    color: #fff;
+    padding: 60px 24px 44px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+  }
+
+  .header-icon, .header-logo {
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    margin-bottom: 20px;
+    display: inline-block;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .header-icon {
+    font-size: 3.5rem;
+    line-height: 92px;
+    backdrop-filter: blur(12px);
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #FFFFFF, #E0E7FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 9999px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #E2E8F0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge.success {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.1);
+    color: #34D399;
+  }
+
+  .badge.accent {
+    border-color: rgba(6, 182, 212, 0.4);
+    background: rgba(6, 182, 212, 0.1);
+    color: #38BDF8;
+  }
+
+  /* ── Main Layout ── */
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  /* ── Table of Contents ── */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 30px;
+    margin-bottom: 36px;
+    box-shadow: var(--shadow);
+  }
+
+  .toc h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .toc ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 8px 24px;
+    padding-left: 24px;
+  }
+
+  .toc li {
+    font-size: 0.92rem;
+  }
+
+  .toc a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .toc a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+  }
+
+  /* ── Content Cards ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 34px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow);
+    transition: border-color 0.2s ease;
+  }
+
+  .card:hover {
+    border-color: var(--border-highlight);
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card h2 .icon {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin: 22px 0 8px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: #E2E8F0;
+  }
+
+  ul, ol {
+    margin: 10px 0 16px 24px;
+  }
+
+  li {
+    font-size: 0.94rem;
+    margin-bottom: 8px;
+    color: #CBD5E1;
+  }
+
+  strong {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  /* ── Callout Boxes ── */
+  .info-box {
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 16px 20px;
+    margin: 18px 0;
+    font-size: 0.92rem;
+    color: #E0E7FF;
+  }
+
+  .warn-box {
+    background: rgba(245, 158, 11, 0.08);
+    border-left: 4px solid var(--warning);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 16px 20px;
+    margin: 18px 0;
+    font-size: 0.92rem;
+    color: #FEF3C7;
+  }
+
+  .success-box {
+    background: rgba(16, 185, 129, 0.08);
+    border-left: 4px solid var(--success);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 16px 20px;
+    margin: 18px 0;
+    font-size: 0.92rem;
+    color: #D1FAE5;
+  }
+
+  /* ── Data Tables ── */
+  .table-responsive {
+    overflow-x: auto;
+    margin: 18px 0 22px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  thead th {
+    background: var(--surface-elevated);
+    color: #F8FAFC;
+    padding: 12px 16px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s ease;
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    vertical-align: top;
+    color: #CBD5E1;
+  }
+
+  tbody td strong {
+    color: #F1F5F9;
+  }
+
+  tbody td a {
+    color: var(--primary-light);
+    text-decoration: none;
+  }
+
+  tbody td a:hover {
+    text-decoration: underline;
+  }
+
+  .tag-local {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(16, 185, 129, 0.18);
+    color: #34D399;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+  }
+
+  .tag-optional {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(6, 182, 212, 0.18);
+    color: #38BDF8;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+  }
+
+  .tag-thirdparty {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(245, 158, 11, 0.18);
+    color: #FBBF24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+
+  /* ── Rights Grid ── */
+  .rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 14px;
+    margin: 20px 0;
+  }
+
+  .right-item {
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .right-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-highlight);
+  }
+
+  .right-item .r-icon {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .right-item strong {
+    display: block;
+    font-size: 0.92rem;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+  }
+
+  .right-item span {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    display: block;
+  }
+
+  /* ── Tier Comparison Table ── */
+  .tier-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .tier-free { background: rgba(148, 163, 184, 0.2); color: #CBD5E1; }
+  .tier-rewarded { background: rgba(6, 182, 212, 0.2); color: #38BDF8; }
+  .tier-premium { background: rgba(99, 102, 241, 0.25); color: #A5B4FC; }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    background: #080910;
+  }
+
+  footer a {
+    color: var(--primary-light);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 640px) {
+    header { padding: 40px 16px 30px; }
+    header h1 { font-size: 1.7rem; }
+    .card { padding: 22px 18px; }
+    .rights-grid { grid-template-columns: 1fr; }
+    .toc ol { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div style="background: rgba(13, 14, 31, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;">
+  <a href="index.html" style="color: #818CF8; text-decoration: none; font-size: 0.88rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
+    <img src="assets/company_icon.png" alt="Company Logo" style="width: 22px; height: 22px; border-radius: 6px; object-fit: cover; vertical-align: middle;" />
+    ← All Namoksha Digital Apps
+  </a>
+  <span style="font-size: 0.82rem; color: #94A3B8; display: inline-flex; align-items: center; gap: 6px;">
+    <img src="assets/company_icon.png" alt="" style="width: 16px; height: 16px; border-radius: 4px; object-fit: cover;" />
+    Namoksha Digital
+  </span>
+</div>
+
+<header>
+  <img src="assets/app_lock_icon.png" alt="AppLock Icon" class="header-logo" />
+  <h1>AppLock</h1>
+  <p>Secure App Lock, Encrypted Vault &amp; Privacy Shield</p>
+  <div class="badge-row">
+    <span class="badge success">✓ Zero-Knowledge Local Storage</span>
+    <span class="badge accent">✓ Google Play Data Safety Certified</span>
+    <span class="badge">GDPR / CCPA / DPDP Compliant</span>
+    <span class="badge">Last Updated: September 2026</span>
+  </div>
+</header>
+
+<main>
+  <div class="toc">
+    <h2><span>📑</span> Table of Contents</h2>
+    <ol>
+      <li><a href="#overview">Introduction &amp; Core Principles</a></li>
+      <li><a href="#data-collected">Data We Collect &amp; Process</a></li>
+      <li><a href="#data-not-collected">Data We Strictly Do NOT Collect</a></li>
+      <li><a href="#permissions">Android Permissions &amp; Technical Usage</a></li>
+      <li><a href="#vault-security">Private Vault &amp; Intruder Security Architecture</a></li>
+      <li><a href="#monetization">Freemium Model, Rewarded Ads &amp; In-App Purchases</a></li>
+      <li><a href="#third-party">Third-Party Services &amp; SDK Partners</a></li>
+      <li><a href="#data-safety">Google Play Data Safety Disclosures</a></li>
+      <li><a href="#retention-deletion">Data Retention &amp; Permanent Deletion</a></li>
+      <li><a href="#privacy-rights">International Privacy Rights (GDPR, CCPA, DPDP)</a></li>
+      <li><a href="#children">Children's Privacy (COPPA Compliance)</a></li>
+      <li><a href="#terms">Terms of Use &amp; Service Agreement</a></li>
+      <li><a href="#disclaimers">Disclaimers &amp; Limitations of Liability</a></li>
+      <li><a href="#changes">Updates to This Privacy Policy</a></li>
+      <li><a href="#contact">Contact &amp; Grievance Redressal</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <section class="card" id="overview">
+    <h2><span class="icon">🛡️</span> 1. Introduction &amp; Core Principles</h2>
+    <p>Welcome to <strong>AppLock (also referred to as Aegis Lock) — Secure App Lock &amp; Privacy Guard</strong> (package name: <code>com.rn.namoksha.secure.applock</code>), developed and published by <strong>Namoksha Digital</strong> ("we", "our", or "us").</p>
+    <p>We believe your personal privacy is a fundamental human right. AppLock was engineered from the ground up on a <strong>zero-knowledge, on-device architecture</strong>. Our core mission is to empower you to lock applications, secure private media files, prevent unauthorized physical intrusions, and manage notification privacy without having to sacrifice your privacy to cloud servers.</p>
+    
+    <div class="success-box">
+      <strong>Zero-Knowledge Principle:</strong> AppLock processes all lock credentials, app lists, private media, intruder snapshots, and scheduling profiles <strong>100% locally on your device</strong>. We operate no remote databases storing your personal files or credentials. What is locked on your device stays strictly on your device.
+    </div>
+    
+    <p>This document constitutes both our comprehensive <strong>Privacy Policy</strong> and our <strong>Terms of Use</strong>. Please read it carefully to understand how your device data is handled.</p>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="card" id="data-collected">
+    <h2><span class="icon">📊</span> 2. Data We Collect &amp; Process</h2>
+    <p>To deliver core security functionality, crash analytics, and optional cloud feature updates, AppLock handles data in the following distinct categories:</p>
+
+    <h3>2.1 Data Stored Exclusively on Your Device (App-Private Storage)</h3>
+    <ul>
+      <li><strong>Lock Credentials:</strong> Your PIN, Pattern, or Password is salted, hashed with cryptographic algorithms, and stored in protected, sandboxed Android app storage. Raw passwords are never retained or transmitted.</li>
+      <li><strong>Biometric Authentication:</strong> Biometric verification (fingerprint or face unlock) is delegated to Android's native <code>BiometricPrompt</code> API and handled directly inside the device's hardware-backed Trusted Execution Environment (TEE) / Secure Element. AppLock never reads, captures, or exports biometric templates.</li>
+      <li><strong>Private Vault Content:</strong> Photos, videos, documents, and audio files placed in your Vault are encrypted using hardware-backed Android Keystore + AES-256-GCM authenticated encryption. Plaintext copies are unlinked from public media galleries upon import.</li>
+      <li><strong>Intruder Snapshots:</strong> When enabled, photos taken by the front camera upon repeated failed unlock attempts are saved locally with timestamps and failed attempt counts. They are never uploaded to any remote server.</li>
+      <li><strong>App Lock Configurations &amp; Schedules:</strong> The list of packages you choose to lock, auto-lock timeouts, Focus Mode profiles, and notification privacy preferences are saved locally via Android Jetpack DataStore.</li>
+      <li><strong>Pro Style Preferences &amp; Camouflage:</strong> Chosen lock screen background aesthetics, OLED black theme, acrylic blur settings, and decoy app icon configurations are stored locally.</li>
+    </ul>
+
+    <h3>2.2 Data Processed Automatically via Third-Party SDKs</h3>
+    <ul>
+      <li><strong>Diagnostics &amp; Crash Reporting (Firebase Crashlytics):</strong> Device hardware model, operating system version, memory status, battery level at time of crash, and anonymized stack traces to rapidly fix bugs. This data contains no personally identifiable information (PII).</li>
+      <li><strong>Aggregated App Metrics (Google Analytics for Firebase):</strong> Pseudonymous, aggregated interaction metrics (such as screen visits, session frequency, onboarding completion, and feature adoption) to improve app responsiveness and usability.</li>
+      <li><strong>Advertising Identifiers (Google AdMob):</strong> For non-premium users, Google AdMob may process the Google Advertising ID (AAID), coarse IP-derived geographic location (country/city level), and ad interaction telemetry for frequency capping, ad mediation, and personalized/contextual advertising (subject to user consent).</li>
+      <li><strong>In-App Purchase &amp; Subscription Tokens (Google Play Billing):</strong> Purchase tokens and subscription status indicators returned by the Google Play Store to verify premium entitlements. We do not process or store financial card numbers or bank information.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="card" id="data-not-collected">
+    <h2><span class="icon">🚫</span> 3. Data We Strictly Do NOT Collect</h2>
+    <div class="warn-box">
+      <strong>Absolute Privacy Guarantees:</strong> We do not monitor, log, or transmit any of the following data:
+      <ul style="margin-top: 8px;">
+        <li><strong>No Account Information:</strong> We do not require you to create an account, register, or provide your name, phone number, or email address to use AppLock.</li>
+        <li><strong>No Upload of Private Vault Files:</strong> Your photos, videos, and documents never leave your physical smartphone. We have no cloud servers capable of receiving them.</li>
+        <li><strong>No Content Snooping:</strong> We do NOT monitor, inspect, or intercept the internal text, messages, chats, or media inside the applications you lock.</li>
+        <li><strong>No Tracking of Browsing or App Activity:</strong> We do NOT log which websites you visit or record user behavior inside other apps.</li>
+        <li><strong>No Location Tracking:</strong> We do NOT request GPS permissions or track real-time physical locations.</li>
+        <li><strong>No Access to Notification Messages:</strong> While the optional Notification Privacy feature blocks sensitive lock-screen preview cards, our service never reads, parses, stores, or transmits notification message text.</li>
+        <li><strong>No Sale of Data:</strong> We do <strong>NOT</strong> sell, broker, rent, or trade your personal data or advertising identifiers to data brokers or third parties.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="card" id="permissions">
+    <h2><span class="icon">⚙️</span> 4. Android Permissions &amp; Technical Usage</h2>
+    <p>Android requires explicit permissions for security apps to perform real-time monitoring and overlay display. Below is an honest, transparent accounting of every permission used by AppLock:</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Type</th>
+            <th>Technical Purpose &amp; User Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>PACKAGE_USAGE_STATS</strong></td>
+            <td><span class="tag-local">System Access</span></td>
+            <td>Granted in Android System Settings. Required to detect when a protected application is launched so AppLock can instantly present the security challenge. No usage logs are transmitted off-device.</td>
+          </tr>
+          <tr>
+            <td><strong>SYSTEM_ALERT_WINDOW</strong><br><em>(Display Over Other Apps)</em></td>
+            <td><span class="tag-local">System Access</span></td>
+            <td>Required on Android 10+ (API 29+) to display the security PIN/pattern/biometric overlay on top of protected apps before they can be opened.</td>
+          </tr>
+          <tr>
+            <td><strong>FOREGROUND_SERVICE &amp;<br>SPECIAL_USE</strong></td>
+            <td><span class="tag-local">Service</span></td>
+            <td>Keeps the app protection monitor alive in the background so the Android operating system does not kill the security loop during low memory conditions.</td>
+          </tr>
+          <tr>
+            <td><strong>POST_NOTIFICATIONS</strong></td>
+            <td><span class="tag-optional">Optional (API 33+)</span></td>
+            <td>Shows the mandatory system notification indicating that app protection is active, and sends immediate security alerts when an intruder attempts unauthorized access.</td>
+          </tr>
+          <tr>
+            <td><strong>RECEIVE_BOOT_COMPLETED</strong></td>
+            <td><span class="tag-local">System Event</span></td>
+            <td>Restores lock screen protection automatically whenever your device is rebooted, ensuring your apps remain secure even after a restart.</td>
+          </tr>
+          <tr>
+            <td><strong>USE_BIOMETRIC</strong></td>
+            <td><span class="tag-optional">Hardware</span></td>
+            <td>Allows biometric unlocking (fingerprint / face recognition) via Android's hardware-isolated BiometricPrompt API.</td>
+          </tr>
+          <tr>
+            <td><strong>CAMERA</strong></td>
+            <td><span class="tag-optional">Optional</span></td>
+            <td>Strictly optional. Used exclusively to capture a front-camera snapshot of an unauthorized person who repeatedly inputs incorrect credentials. Snapshots are stored strictly in private local storage.</td>
+          </tr>
+          <tr>
+            <td><strong>BIND_NOTIFICATION_LISTENER_SERVICE</strong></td>
+            <td><span class="tag-optional">Special Access</span></td>
+            <td>Optional Notification Privacy feature. Used solely to dismiss notification preview cards from locked apps until they are legitimately unlocked. Notification text is never read, recorded, or transmitted.</td>
+          </tr>
+          <tr>
+            <td><strong>VIBRATE</strong></td>
+            <td><span class="tag-local">Hardware</span></td>
+            <td>Provides pleasant haptic feedback when entering digits on the keypad or unlocking apps.</td>
+          </tr>
+          <tr>
+            <td><strong>INTERNET &amp; ACCESS_NETWORK_STATE</strong></td>
+            <td><span class="tag-thirdparty">Network</span></td>
+            <td>Required to load advertisements (for free-tier users), process in-app billing tokens, fetch remote config flags, and transmit anonymized crash reports.</td>
+          </tr>
+          <tr>
+            <td><strong>com.google.android.gms.permission.AD_ID</strong></td>
+            <td><span class="tag-thirdparty">Advertising</span></td>
+            <td>Google Mobile Ads Advertising ID used for frequency capping, fraud prevention, and personalized/non-personalized ad delivery based on your consent.</td>
+          </tr>
+          <tr>
+            <td><strong>com.android.vending.BILLING</strong></td>
+            <td><span class="tag-thirdparty">Commerce</span></td>
+            <td>Enables secure subscription purchases and lifetime unlocks via the Google Play Billing library.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="card" id="vault-security">
+    <h2><span class="icon">🔐</span> 5. Private Vault &amp; Intruder Security Architecture</h2>
+    
+    <h3>5.1 Military-Grade Vault Envelope Encryption</h3>
+    <p>Our Private Vault does not simply rename or hide file extensions. Instead, files imported into the Vault are secured using an advanced <strong>envelope-and-chunked AEAD (Authenticated Encryption with Associated Data)</strong> architecture:</p>
+    <ul>
+      <li><strong>Hardware-Backed Master Key:</strong> A cryptographic master key is generated inside the Android Keystore system. This key never leaves the hardware TEE (Trusted Execution Environment) or StrongBox keymaster.</li>
+      <li><strong>Per-File Random Data Key:</strong> Each encrypted file is assigned a unique, cryptographically random 256-bit AES-GCM data key. The file content is encrypted with this key and broken into authenticated stream chunks with sequential nonces.</li>
+      <li><strong>Key Wrapping:</strong> The file's data key is wrapped using the Keystore hardware key. Even if an attacker physically extracts the device's flash storage, ciphertext without the hardware Keystore key remains mathematically unrecoverable.</li>
+      <li><strong>Gallery Cleansing:</strong> Plaintext media is securely unlinked from Android's public MediaStore once successfully encrypted into the sandbox.</li>
+    </ul>
+
+    <h3>5.2 Intruder Detection &amp; Photo Snapshot Handling</h3>
+    <p>When Intruder Detection is enabled by the user:</p>
+    <ul>
+      <li>The app monitors sequential failed credential attempts. Once the configured threshold (e.g., 3 failed attempts) is exceeded, the front camera captures a silent snapshot.</li>
+      <li>The captured image is written exclusively to the app's sandboxed private storage directory (<code>context.filesDir</code>), invisible to public gallery apps and other applications.</li>
+      <li>Intruder logs and images are automatically purged according to your selected retention duration (default: 30 days) or immediately upon manual deletion with secure file overwrite.</li>
+    </ul>
+
+    <h3>5.3 Camouflage &amp; Decoy Protection</h3>
+    <p>AppLock provides an optional Fake Crash decoy dialog that simulates a system crash message when an unauthorized user attempts to open a protected app. Only the legitimate owner knows the secret dismissal gesture to bring up the real unlock interface.</p>
+  </section>
+
+  <!-- SECTION 6 -->
+  <section class="card" id="monetization">
+    <h2><span class="icon">💎</span> 6. Freemium Model, Rewarded Ads &amp; In-App Purchases</h2>
+    <p>AppLock is funded through a fair, ethical hybrid monetization model: a generous free tier, opt-in rewarded ads for extra utility, and a premium subscription / lifetime license for power users.</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature Scope</th>
+            <th>Free Tier</th>
+            <th>Rewarded Ad Unlocks</th>
+            <th>Premium Pro (IAP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>App Protection Limit</strong></td>
+            <td><span class="tier-pill tier-free">Up to 5 Apps</span></td>
+            <td><span class="tier-pill tier-rewarded">+1 Permanent App per Ad</span></td>
+            <td><span class="tier-pill tier-premium">Unlimited Apps</span></td>
+          </tr>
+          <tr>
+            <td><strong>Private Vault Storage</strong></td>
+            <td><span class="tier-pill tier-free">Up to 5 Files</span></td>
+            <td><span class="tier-pill tier-rewarded">+3 Files per Ad</span></td>
+            <td><span class="tier-pill tier-premium">Unlimited Files</span></td>
+          </tr>
+          <tr>
+            <td><strong>Smart Focus Schedules</strong></td>
+            <td><span class="tier-pill tier-free">1 Schedule</span></td>
+            <td><span class="tier-pill tier-rewarded">+1 Schedule per Ad</span></td>
+            <td><span class="tier-pill tier-premium">Unlimited Schedules</span></td>
+          </tr>
+          <tr>
+            <td><strong>Pro Themes &amp; Lock Styles</strong></td>
+            <td><span class="tier-pill tier-free">Standard Themes</span></td>
+            <td><span class="tier-pill tier-rewarded">24h Access per Pro Style</span></td>
+            <td><span class="tier-pill tier-premium">All Themes Unlocked</span></td>
+          </tr>
+          <tr>
+            <td><strong>Advertisements</strong></td>
+            <td><span class="tier-pill tier-free">Banner, Interstitial, Open</span></td>
+            <td><span class="tier-pill tier-rewarded">User-Initiated Video</span></td>
+            <td><span class="tier-pill tier-premium">100% Ad-Free</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>6.1 Google Play In-App Purchases &amp; Subscriptions</h3>
+    <ul>
+      <li><strong>Billing Process:</strong> All transactions are conducted directly through <strong>Google Play Billing</strong>. Namoksha Digital never collects, stores, or handles credit card numbers, PayPal details, or billing addresses.</li>
+      <li><strong>Automatic Renewal:</strong> Recurring subscriptions automatically renew unless cancelled at least 24 hours prior to the end of the active billing cycle.</li>
+      <li><strong>Management &amp; Cancellations:</strong> You can manage or cancel your active subscriptions at any time via the <em>Google Play Store app &gt; Payments &amp; Subscriptions</em>.</li>
+      <li><strong>Refunds:</strong> Refund requests are governed strictly by Google Play's standard refund policies.</li>
+    </ul>
+
+    <h3>6.2 Rewarded Advertising Policy</h3>
+    <p>Watching rewarded ads is always 100% optional. When you choose to watch a rewarded video ad, Google AdMob serves a video from third-party advertisers. Upon verified completion, the app grants your bonus quota (bonus locked app slot, vault files, or schedule slot) which is persisted permanently in your local preferences.</p>
+  </section>
+
+  <!-- SECTION 7 -->
+  <section class="card" id="third-party">
+    <h2><span class="icon">🔗</span> 7. Third-Party Services &amp; SDK Partners</h2>
+    <p>AppLock integrates selected, industry-standard Google SDKs to provide analytics, crash monitoring, dynamic configuration, and monetization. Each partner operates under its own strict privacy policy:</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Partner &amp; SDK</th>
+            <th>Provider</th>
+            <th>Primary Functionality</th>
+            <th>Privacy Documentation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google Play Services</strong></td>
+            <td>Google LLC</td>
+            <td>Operating system bridge, biometric prompt, base services</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google Play In-App Billing</strong></td>
+            <td>Google LLC</td>
+            <td>In-app purchases, subscription management, digital receipts</td>
+            <td><a href="https://play.google.com/about/privacy-security/" target="_blank" rel="noopener">Google Play Terms</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google AdMob</strong></td>
+            <td>Google LLC</td>
+            <td>Banner, Interstitial, Rewarded, and App Open advertising</td>
+            <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Data Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google User Messaging Platform (UMP)</strong></td>
+            <td>Google LLC</td>
+            <td>Consent management platform complying with GDPR &amp; IAB TCF v2.2</td>
+            <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Firebase Crashlytics</strong></td>
+            <td>Google LLC</td>
+            <td>Anonymized stack traces, crash diagnosis, OS telemetry</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google Analytics for Firebase</strong></td>
+            <td>Google LLC</td>
+            <td>Aggregated usage trends, feature interaction statistics</td>
+            <td><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Analytics Data Security</a></td>
+          </tr>
+          <tr>
+            <td><strong>Firebase Remote Config</strong></td>
+            <td>Google LLC</td>
+            <td>Dynamic feature configuration, seasonal themes, ad tuning</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Data Security</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 8 -->
+  <section class="card" id="data-safety">
+    <h2><span class="icon">📋</span> 8. Google Play Data Safety Disclosures</h2>
+    <p>For complete compliance with Google Play's Data Safety declaration requirements, below is a structured summary of data types and handling practices:</p>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Data Type</th>
+            <th>Collected?</th>
+            <th>Shared?</th>
+            <th>Purpose</th>
+            <th>Encrypted in Transit?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Device or Other IDs</strong></td>
+            <td>Advertising ID (AAID)</td>
+            <td>Yes (Non-Premium)</td>
+            <td>Yes (AdMob)</td>
+            <td>Advertising, Analytics, Fraud Prevention</td>
+            <td>Yes (HTTPS/TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>App Info &amp; Performance</strong></td>
+            <td>Crash Logs &amp; Diagnostics</td>
+            <td>Yes</td>
+            <td>Yes (Firebase)</td>
+            <td>App functionality, Stability, Crash troubleshooting</td>
+            <td>Yes (HTTPS/TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>App Activity</strong></td>
+            <td>App interactions &amp; Screen views</td>
+            <td>Yes (Aggregated)</td>
+            <td>Yes (Firebase)</td>
+            <td>Anonymous Analytics &amp; Product Improvement</td>
+            <td>Yes (HTTPS/TLS)</td>
+          </tr>
+          <tr>
+            <td><strong>Photos, Videos, Audio, Files</strong></td>
+            <td>User Vault Media</td>
+            <td><strong>NO</strong> (Local Only)</td>
+            <td><strong>NO</strong></td>
+            <td>Stored encrypted on device; never transmitted</td>
+            <td>N/A (Never sent)</td>
+          </tr>
+          <tr>
+            <td><strong>Personal Info</strong></td>
+            <td>Name, Email, Phone, Address</td>
+            <td><strong>NO</strong></td>
+            <td><strong>NO</strong></td>
+            <td>Not collected (No account required)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>Financial Info</strong></td>
+            <td>Credit Card / Payment Info</td>
+            <td><strong>NO</strong></td>
+            <td><strong>NO</strong></td>
+            <td>Processed exclusively by Google Play Billing</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td>Precise GPS Location</td>
+            <td><strong>NO</strong></td>
+            <td><strong>NO</strong></td>
+            <td>Not requested or collected</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>Messages / Notifications</strong></td>
+            <td>SMS, Chat, Notification text</td>
+            <td><strong>NO</strong></td>
+            <td><strong>NO</strong></td>
+            <td>Not read or collected</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 9 -->
+  <section class="card" id="retention-deletion">
+    <h2><span class="icon">🗑️</span> 9. Data Retention &amp; Permanent Deletion</h2>
+    
+    <h3>9.1 User Control &amp; In-App Deletion</h3>
+    <p>You have continuous, real-time control over all data stored by AppLock:</p>
+    <ul>
+      <li><strong>Vault Files:</strong> Decrypt and restore files back to your public gallery at any time, or delete them permanently from within the Vault.</li>
+      <li><strong>Intruder Photos:</strong> Review intruder records and delete individual snapshots or wipe the entire intruder log with one tap.</li>
+      <li><strong>Lock Settings &amp; Protected Apps:</strong> Toggle off app protection or uncheck specific apps whenever you desire.</li>
+    </ul>
+
+    <h3>9.2 Uninstalling the App</h3>
+    <div class="warn-box">
+      <strong>Important Warning Regarding Uninstallation:</strong> Because all encryption keys, private vault files, and intruder snapshots reside exclusively in your device's sandboxed private storage directory (<code>context.filesDir</code>), <strong>uninstalling AppLock or clearing app data in Android System Settings permanently and irrevocably deletes all your encrypted vault files and intruder logs</strong>. Please restore any important media from the Vault to your public storage prior to uninstalling the app.
+    </div>
+
+    <h3>9.3 Excluded from Cloud Backups</h3>
+    <p>AppLock explicitly configures <code>android:allowBackup="false"</code> and enforces custom extraction rules. This ensures that your encrypted vault, PIN hashes, and intruder photos are never inadvertently leaked to unencrypted third-party cloud backup servers.</p>
+  </section>
+
+  <!-- SECTION 10 -->
+  <section class="card" id="privacy-rights">
+    <h2><span class="icon">🌍</span> 10. International Privacy Rights</h2>
+    <p>We respect international data protection legislation and provide robust user controls regardless of where you reside.</p>
+
+    <h3>10.1 European Economic Area (GDPR) &amp; United Kingdom (UK GDPR)</h3>
+    <p>Under the General Data Protection Regulation, our legal bases for processing data are: (i) <em>User Consent</em> for personalized ads via the Google UMP consent banner, (ii) <em>Legitimate Interests</em> for crash analytics and security maintenance, and (iii) <em>Contractual Performance</em> for in-app billing transactions.</p>
+    
+    <div class="rights-grid">
+      <div class="right-item">
+        <div class="r-icon">📋</div>
+        <strong>Right to Access</strong>
+        <span>Request details on what data is processed</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">✏️</div>
+        <strong>Right to Rectification</strong>
+        <span>Modify inaccurate local preferences instantly</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">🗑️</div>
+        <strong>Right to Erasure</strong>
+        <span>Permanently delete local vault &amp; app data</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">⏸️</div>
+        <strong>Restrict Processing</strong>
+        <span>Revoke advertising consent via settings</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">📦</div>
+        <strong>Data Portability</strong>
+        <span>Export your vault media back to public storage</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">🚫</div>
+        <strong>Right to Object</strong>
+        <span>Opt out of diagnostic or marketing telemetry</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">🔓</div>
+        <strong>Withdraw Consent</strong>
+        <span>Change your UMP ad consent preferences anytime</span>
+      </div>
+      <div class="right-item">
+        <div class="r-icon">⚖️</div>
+        <strong>Lodge Complaint</strong>
+        <span>File a claim with your local Data Protection Authority</span>
+      </div>
+    </div>
+
+    <h3>10.2 California Privacy Rights (CCPA / CPRA)</h3>
+    <p>California residents have specific rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):</p>
+    <ul>
+      <li><strong>Notice at Collection:</strong> We inform you of the categories of personal information collected at or before collection.</li>
+      <li><strong>No "Sale" of Personal Information:</strong> We do NOT sell your personal data for monetary consideration.</li>
+      <li><strong>Opt-Out of "Sharing" for Cross-Context Behavioral Advertising:</strong> You can opt out of targeted advertising by resetting your Android Advertising ID (<em>Settings &gt; Google &gt; Ads &gt; Reset/Delete Advertising ID</em>) or opting out through our in-app consent preferences.</li>
+    </ul>
+
+    <h3>10.3 India's Digital Personal Data Protection Act, 2023 (DPDP)</h3>
+    <p>Under India's Digital Personal Data Protection Act, 2023, you have the right to access an overview of processed personal data, the right to correction and erasure, the right of grievance redressal, and the right to nominate an individual to exercise rights in the event of incapacity.</p>
+  </section>
+
+  <!-- SECTION 11 -->
+  <section class="card" id="children">
+    <h2><span class="icon">🧸</span> 11. Children's Privacy (COPPA Compliance)</h2>
+    <p>AppLock is a utility designed for general audiences and is <strong>not directed to children under the age of 13</strong> (or under 16 in the EEA/UK). We do not knowingly collect, solicit, or maintain personally identifiable information from children under these ages. If we become aware that a child has provided us with personal information, we will take immediate steps to delete such data from our records.</p>
+  </section>
+
+  <!-- SECTION 12 -->
+  <section class="card" id="terms">
+    <h2><span class="icon">📜</span> 12. Terms of Use &amp; Service Agreement</h2>
+    
+    <h3>12.1 Acceptance of Terms</h3>
+    <p>By downloading, installing, accessing, or using AppLock, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not install or use the application.</p>
+
+    <h3>12.2 License Grant</h3>
+    <p>Namoksha Digital grants you a personal, worldwide, non-exclusive, non-transferable, revocable license to use AppLock on Android devices you own or control for personal, non-commercial security purposes in accordance with this agreement.</p>
+
+    <h3>12.3 Prohibited Activities</h3>
+    <p>You agree that you will NOT:</p>
+    <ul>
+      <li>Decompile, disassemble, reverse engineer, or attempt to derive the source code of AppLock.</li>
+      <li>Use AppLock for unlawful surveillance, stalking, espionage, or unauthorized monitoring of third parties without their express, informed consent.</li>
+      <li>Bypass, tamper with, or circumvent any licensing, feature gating, or security enforcement mechanisms built into the application.</li>
+      <li>Distribute modified, cracked, or unauthorized APK packages bearing our name or trademark.</li>
+    </ul>
+
+    <h3>12.4 User Responsibilities &amp; Credentials</h3>
+    <p>You are solely responsible for maintaining the confidentiality of your PIN, pattern, or password. Because AppLock uses a zero-knowledge local security architecture, <strong>we cannot recover or reset your PIN if you forget it and have not configured biometric unlock or recovery safeguards</strong>.</p>
+  </section>
+
+  <!-- SECTION 13 -->
+  <section class="card" id="disclaimers">
+    <h2><span class="icon">⚠️</span> 13. Disclaimers &amp; Limitations of Liability</h2>
+    
+    <h3>13.1 "As-Is" Warranty Disclaimer</h3>
+    <p>AppLock is provided on an <strong>"AS IS" and "AS AVAILABLE"</strong> basis without warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    
+    <h3>13.2 Operating System Limitations &amp; Rooting</h3>
+    <p>While AppLock utilizes resilient background monitoring mechanisms, Android OS battery optimization frameworks, manufacturer-specific task killers (e.g., Xiaomi MIUI/HyperOS, Samsung OneUI, Huawei EMUI aggressive battery managers), or rooting the device may interfere with or terminate background services. We strongly recommend adding AppLock to your device's battery optimization whitelist for uninterrupted protection.</p>
+
+    <h3>13.3 Limitation of Liability</h3>
+    <p>To the maximum extent permitted by applicable law, in no event shall Namoksha Digital, its developers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, unauthorized access to your device by third parties, hardware failure, or device corruption arising out of or related to your use of AppLock.</p>
+
+    <h3>13.4 Governing Law &amp; Jurisdiction</h3>
+    <p>These Terms shall be governed by and construed in accordance with the laws of <strong>India</strong>, without regard to conflict of law principles. Any dispute arising under these terms shall be subject to the exclusive jurisdiction of the competent courts located in Delhi, India.</p>
+  </section>
+
+  <!-- SECTION 14 -->
+  <section class="card" id="changes">
+    <h2><span class="icon">🔄</span> 14. Updates to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy and Terms of Use from time to time to reflect new app features, updated security protocols, or modifications in statutory legal requirements. When updates are published, the "Last Updated" date at the top of this document will be amended.</p>
+    <p>We encourage you to review this document periodically. Continued use of AppLock following the posting of changes constitutes your binding acceptance of the updated terms.</p>
+  </section>
+
+  <!-- SECTION 15 -->
+  <section class="card" id="contact">
+    <h2><span class="icon">📧</span> 15. Contact &amp; Grievance Redressal</h2>
+    <p>If you have any questions, suggestions, feedback, or data protection inquiries regarding this Privacy Policy or our privacy practices, please contact our dedicated Privacy &amp; Grievance Officer:</p>
+    <ul>
+      <li><strong>Developer &amp; Organization:</strong> Namoksha Digital</li>
+      <li><strong>Lead Privacy Officer:</strong> Grievance Officer, Namoksha Digital Team</li>
+      <li><strong>Email Support:</strong> <a href="mailto:namokshadigital@gmail.com">namokshadigital@gmail.com</a></li>
+      <li><strong>Developer Page:</strong> <a href="https://play.google.com/store/apps/developer?id=Namoksha+Digital" target="_blank" rel="noopener">Namoksha Digital on Google Play</a></li>
+      <li><strong>Country of Operation:</strong> India</li>
+      <li><strong>Response Window:</strong> We endeavor to address and resolve all legitimate inquiries within thirty (30) business days.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Namoksha Digital. All rights reserved.</p>
+  <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-muted);">
+    AppLock — Secure App Lock, Encrypted Vault &amp; Privacy Shield | 
+    <a href="#overview">Back to Top</a>
+  </p>
+</footer>
+
+</body>
+</html>

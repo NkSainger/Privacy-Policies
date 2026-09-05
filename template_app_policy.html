@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- [REPLACE: App Name & Description] -->
+<title>[APP_NAME] — Privacy Policy, Terms &amp; Data Safety</title>
+<meta name="description" content="Official Privacy Policy and Terms of Use for [APP_NAME] published by Namoksha Digital." />
+<link rel="icon" type="image/png" href="assets/company_icon.png" />
+<style>
+  :root {
+    --primary: #6366F1;
+    --primary-light: #818CF8;
+    --primary-dark: #4F46E5;
+    --accent: #06B6D4;
+    --bg: #0A0B14;
+    --surface: #131525;
+    --surface-elevated: #1A1D33;
+    --border: rgba(255, 255, 255, 0.10);
+    --border-highlight: rgba(99, 102, 241, 0.40);
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --success: #10B981;
+    --warning: #F59E0B;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.55);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Top Navigation Bar ── */
+  .top-bar {
+    background: rgba(13, 14, 31, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .top-bar a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .top-bar a:hover {
+    text-decoration: underline;
+  }
+
+  .publisher-tag {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #0D0E1F 0%, #161830 40%, #282C5F 80%, #4F46E5 100%);
+    color: #fff;
+    padding: 50px 24px 38px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-logo {
+    width: 86px;
+    height: 86px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    margin-bottom: 16px;
+    display: inline-block;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #FFFFFF, #E0E7FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 9999px;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #E2E8F0;
+  }
+
+  .badge.success {
+    border-color: rgba(16, 185, 129, 0.4);
+    background: rgba(16, 185, 129, 0.12);
+    color: #34D399;
+  }
+
+  /* ── Main Layout ── */
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 38px 20px 70px;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow);
+  }
+
+  .toc h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--primary-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .toc ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 8px 20px;
+    padding-left: 20px;
+  }
+
+  .toc a {
+    color: #CBD5E1;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .toc a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px 32px;
+    margin-bottom: 26px;
+    box-shadow: var(--shadow);
+  }
+
+  .card h2 {
+    font-size: 1.28rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card h3 {
+    font-size: 1.04rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin: 20px 0 8px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: #E2E8F0;
+  }
+
+  ul {
+    margin: 10px 0 16px 24px;
+  }
+
+  li {
+    font-size: 0.93rem;
+    margin-bottom: 8px;
+    color: #CBD5E1;
+  }
+
+  strong { color: #FFFFFF; font-weight: 600; }
+  code {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+    color: #CBD5E1;
+    font-family: monospace;
+  }
+
+  .info-box {
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 0.92rem;
+    color: #E0E7FF;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    margin: 18px 0 20px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  thead th {
+    background: var(--surface-elevated);
+    color: #F8FAFC;
+    padding: 12px 16px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    color: #CBD5E1;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  footer {
+    text-align: center;
+    padding: 36px 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    background: #080910;
+  }
+
+  footer a {
+    color: var(--primary-light);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="index.html">
+    <img src="assets/company_icon.png" alt="Logo" style="width: 20px; height: 20px; border-radius: 5px; object-fit: cover;" />
+    ← All Namoksha Digital Apps
+  </a>
+  <span class="publisher-tag">
+    <img src="assets/company_icon.png" alt="" style="width: 16px; height: 16px; border-radius: 4px; object-fit: cover;" />
+    Published by Namoksha Digital
+  </span>
+</div>
+
+<header>
+  <!-- [REPLACE: App Icon with your image, e.g. assets/my_app_icon.png] -->
+  <img src="assets/company_icon.png" alt="[APP_NAME] Icon" class="header-logo" />
+  <!-- [REPLACE: App Name] -->
+  <h1>[APP_NAME]</h1>
+  <!-- [REPLACE: App Subtitle] -->
+  <p>[APP_SUBTITLE_OR_TAGLINE]</p>
+  <div class="badge-row">
+    <span class="badge success">✓ Zero-Knowledge Architecture</span>
+    <span class="badge">Package: [PACKAGE_NAME]</span>
+    <span class="badge">Last Updated: September 2026</span>
+  </div>
+</header>
+
+<main>
+  <div class="toc">
+    <h2>📑 Table of Contents</h2>
+    <ol>
+      <li><a href="#overview">1. Overview &amp; Introduction</a></li>
+      <li><a href="#data-collection">2. Data We Collect &amp; Process</a></li>
+      <li><a href="#data-not-collected">3. What We Do NOT Collect</a></li>
+      <li><a href="#permissions">4. App Permissions &amp; Technical Usage</a></li>
+      <li><a href="#third-party">5. Third-Party SDKs &amp; Partners</a></li>
+      <li><a href="#retention">6. Data Retention &amp; Deletion</a></li>
+      <li><a href="#rights">7. Privacy Rights (GDPR / CCPA / DPDP)</a></li>
+      <li><a href="#terms">8. Terms of Use</a></li>
+      <li><a href="#contact">9. Contact &amp; Support</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. OVERVIEW -->
+  <section class="card" id="overview">
+    <h2><span>🛡️</span> 1. Overview &amp; Introduction</h2>
+    <p>Welcome to <strong>[APP_NAME]</strong> (package name: <code>[PACKAGE_NAME]</code>), created and maintained by <strong>Namoksha Digital</strong> ("we", "our", or "us").</p>
+    <p>[APP_DESCRIPTION_PARAGRAPH]</p>
+    <div class="info-box">
+      <strong>Core Privacy Guarantee:</strong> [APP_NAME] does not sell your personal information or upload your local personal files to remote servers. All core operations take place locally on your device.
+    </div>
+  </section>
+
+  <!-- 2. DATA WE COLLECT -->
+  <section class="card" id="data-collection">
+    <h2><span>📊</span> 2. Data We Collect &amp; Process</h2>
+    <h3>2.1 Stored Exclusively on Your Device</h3>
+    <ul>
+      <li><strong>App Preferences:</strong> Saved locally using modern sandboxed Android storage (Jetpack DataStore).</li>
+      <li><strong>User Created Data:</strong> Stored strictly in local private app directories.</li>
+    </ul>
+
+    <h3>2.2 Automatically Processed Diagnostics &amp; Telemetry</h3>
+    <ul>
+      <li><strong>Crash Reports (Firebase Crashlytics):</strong> De-identified stack traces and device model info to fix software bugs.</li>
+      <li><strong>Usage Metrics (Google Analytics for Firebase):</strong> Anonymized interaction events to improve app responsiveness.</li>
+      <li><strong>Advertising Telemetry (Google AdMob):</strong> Coarse location (country/city level) and Advertising ID to serve ads in free tiers.</li>
+    </ul>
+  </section>
+
+  <!-- 3. WHAT WE DO NOT COLLECT -->
+  <section class="card" id="data-not-collected">
+    <h2><span>🚫</span> 3. What We Do NOT Collect</h2>
+    <ul>
+      <li>No mandatory accounts, signups, or phone number requirements.</li>
+      <li>No continuous GPS location tracking.</li>
+      <li>No access to personal contacts, call logs, or text messages.</li>
+      <li>No selling or leasing of user data to third-party data brokers.</li>
+    </ul>
+  </section>
+
+  <!-- 4. PERMISSIONS -->
+  <section class="card" id="permissions">
+    <h2><span>⚙️</span> 4. App Permissions &amp; Technical Usage</h2>
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Type</th>
+            <th>Reason &amp; Technical Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>INTERNET &amp; ACCESS_NETWORK_STATE</strong></td>
+            <td>Network</td>
+            <td>Required to load advertisements (free version) and report crash diagnostics.</td>
+          </tr>
+          <tr>
+            <td><strong>POST_NOTIFICATIONS</strong></td>
+            <td>Optional</td>
+            <td>Used to deliver important reminders or alerts to the user.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. THIRD PARTY -->
+  <section class="card" id="third-party">
+    <h2><span>🤝</span> 5. Third-Party SDKs &amp; Partners</h2>
+    <ul>
+      <li><strong>Google Play Services:</strong> Core system APIs (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
+      <li><strong>Google AdMob:</strong> Monetization and ads (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Privacy Policy</a>).</li>
+      <li><strong>Firebase Crashlytics:</strong> Stability monitoring (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a>).</li>
+    </ul>
+  </section>
+
+  <!-- 6. DATA RETENTION -->
+  <section class="card" id="retention">
+    <h2><span>💾</span> 6. Data Retention &amp; Deletion</h2>
+    <p>All local data is deleted instantly when you clear app data in Android settings or uninstall the app. For inquiries or deletion assistance, contact us at <a href="mailto:namokshadigital@gmail.com">namokshadigital@gmail.com</a>.</p>
+  </section>
+
+  <!-- 7. RIGHTS -->
+  <section class="card" id="rights">
+    <h2><span>⚖️</span> 7. Privacy Rights (GDPR / CCPA / DPDP)</h2>
+    <p>Users globally have the right to access, rectify, erase, or object to processing of any personal telemetry. EEA/UK users may revoke ad consent at any time inside the app settings.</p>
+  </section>
+
+  <!-- 8. TERMS -->
+  <section class="card" id="terms">
+    <h2><span>📜</span> 8. Terms of Use</h2>
+    <p>[APP_NAME] is provided on an "AS IS" and "AS AVAILABLE" basis. You are granted a personal, non-commercial, revocable license to use this app in compliance with applicable local laws.</p>
+  </section>
+
+  <!-- 9. CONTACT -->
+  <section class="card" id="contact">
+    <h2><span>📧</span> 9. Contact &amp; Support</h2>
+    <p>For any privacy inquiries regarding [APP_NAME]:</p>
+    <ul>
+      <li><strong>Developer:</strong> Namoksha Digital</li>
+      <li><strong>Email:</strong> <a href="mailto:namokshadigital@gmail.com">namokshadigital@gmail.com</a></li>
+      <li><strong>Google Play Developer Page:</strong> <a href="https://play.google.com/store/apps/developer?id=Namoksha+Digital" target="_blank" rel="noopener">Namoksha Digital</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Namoksha Digital. All rights reserved.</p>
+  <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-muted);">
+    <a href="index.html">← Back to App Directory</a> | 
+    <a href="#overview">Back to Top</a>
+  </p>
+</footer>
+
+</body>
+</html>
